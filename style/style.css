@@ -45,7 +45,10 @@ main{
 main > section{
     margin-top: 130px;
 }
-
+.section-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
 /* Header style */
 .header{
     max-width: 1920px;
@@ -129,6 +132,63 @@ main > section{
     font-weight: 400;
 }
 
+/* Feature you love */
+
+
+/* Some Fact */
+
+.fact{
+    max-width: 240px;
+    max-height: 240px;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    align-items: center;
+    text-align: center;
+    padding: 45px 45px;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+}
+.fact-number{
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+.fact-catagory{
+    margin-top: 5px;
+
+}
+.some-facts-description{
+    max-width: 540px;
+}
+.fact-text-content{
+    margin-bottom: 60px;
+}
+
+/* Sponsors */
+.our-sponsor{
+    max-width: 542px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponsor-img-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponsor-img-container img{
+    filter: grayscale(100%);
+}
+
 
 /* Header media Query */
 @media screen and (max-width:576px) {
@@ -151,7 +211,49 @@ main > section{
     .our-feature{
         margin-left: 30px;
     }
+
+    /* some facts */
+    .facts-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+    }
+
+    /* sponsors */
+    .sponsor-img-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
     
+}
+
+/* Media query for medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    /* Teams Section */
+
+    .teams{
+        flex-direction: column;
+    }
+
+    .teams-image img{
+        width: 100%;
+       
+    }
+    .our-feature{
+        margin-left: 20px 50px;
+    }
+
+    /* some facts */
+    .facts-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        margin-left: 80px;
+        margin-right: 50px;
+    }
+    /* sponsors */
+    .sponsor-img-container{
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
 }
 
 
